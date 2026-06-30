@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gc_engine.dir/main.c.o.d"
   "CMakeFiles/gc_engine.dir/objects/snekobject.c.o"
   "CMakeFiles/gc_engine.dir/objects/snekobject.c.o.d"
+  "CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o"
+  "CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o.d"
   "gc_engine"
   "gc_engine.pdb"
 )

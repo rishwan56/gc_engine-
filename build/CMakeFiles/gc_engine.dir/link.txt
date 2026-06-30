@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/gc_engine.dir/main.c.o CMakeFiles/gc_engine.dir/objects/snekobject.c.o -o gc_engine 
+/usr/bin/cc CMakeFiles/gc_engine.dir/main.c.o CMakeFiles/gc_engine.dir/objects/snekobject.c.o CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o -o gc_engine 

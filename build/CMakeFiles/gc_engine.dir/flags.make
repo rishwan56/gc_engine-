@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/rishwan56/rishwan_program/gc_engine-/objects
+C_INCLUDES = -I/home/rishwan56/rishwan_program/gc_engine-/objects -I/home/rishwan56/rishwan_program/gc_engine-/reference_counting
 
 C_FLAGS = 
 

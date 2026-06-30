@@ -6,8 +6,9 @@ add_executable(
 	gc_engine
 	main.c 
 	objects/snekobject.c
+	reference_counting/sneknew.c 
 )
 
-target_include_directories(gc_engine PRIVATE objects)
+target_include_directories(gc_engine PRIVATE objects reference_counting)
 
 

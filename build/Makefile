@@ -177,6 +177,30 @@ objects/snekobject.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/objects/snekobject.c.s
 .PHONY : objects/snekobject.c.s
 
+reference_counting/sneknew.o: reference_counting/sneknew.c.o
+.PHONY : reference_counting/sneknew.o
+
+# target to build an object file
+reference_counting/sneknew.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o
+.PHONY : reference_counting/sneknew.c.o
+
+reference_counting/sneknew.i: reference_counting/sneknew.c.i
+.PHONY : reference_counting/sneknew.i
+
+# target to preprocess a source file
+reference_counting/sneknew.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.i
+.PHONY : reference_counting/sneknew.c.i
+
+reference_counting/sneknew.s: reference_counting/sneknew.c.s
+.PHONY : reference_counting/sneknew.s
+
+# target to generate assembly for a file
+reference_counting/sneknew.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.s
+.PHONY : reference_counting/sneknew.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... objects/snekobject.o"
 	@echo "... objects/snekobject.i"
 	@echo "... objects/snekobject.s"
+	@echo "... reference_counting/sneknew.o"
+	@echo "... reference_counting/sneknew.i"
+	@echo "... reference_counting/sneknew.s"
 .PHONY : help
 
 

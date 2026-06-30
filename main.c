@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "snekobject.h"
+#include "sneknew.h"
 
 int main(){
 	//integer check 

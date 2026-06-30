@@ -1,0 +1,14 @@
+#include "snekobject.h"
+
+snek_object_t *new_snek_integer(int value); 
+snek_object_t *new_snek_float(float value);
+snek_object_t *new_snek_string(char* value); 
+snek_object_t *new_snek_vector(snek_object_t *X, snek_object_t *Y, snek_object_t *Z); 
+snek_object_t *new_snek_array(size_t size);
+
+snek_object_t *_new_snek_object(); 
+
+
+void refcount_inc(snek_object_t* obj); 
+void refcount_dec(snek_object_t* obj); 
+void refcount_free(snek_object_t* obj); 
