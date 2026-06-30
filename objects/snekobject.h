@@ -31,17 +31,28 @@ typedef union SnekObjectData{
 }snek_object_data_t;
 
 typedef struct SnekObject{
-	//bool is_marked; 
+	bool is_marked; 
 	int refcount; 	
 	snek_object_kind_t kind; 
 	snek_object_data_t data;
 }snek_object_t; 
 
+snek_object_t *new_snek_integer(int value); 
+snek_object_t *new_snek_float(float value);
+snek_object_t *new_snek_string(char* value); 
+snek_object_t *new_snek_vector(snek_object_t *X, snek_object_t *Y, snek_object_t *Z); 
+snek_object_t *new_snek_array(size_t size);
+
+snek_object_t *_new_snek_object(); 
+void refcount_inc(snek_object_t* obj); 
+void refcount_dec(snek_object_t* obj); 
+void refcount_free(snek_object_t* obj); 
+void snek_object_free(snek_object_t* obj); 
 
 bool snek_array_set(snek_object_t *arr, size_t index, snek_object_t *value); 
 snek_object_t *snek_array_get(snek_object_t * arr, size_t index); 
 
 int snek_len(snek_object_t *obj); 
-snek_object_t *snek_add(snek_object_t *a, snek_object_t *b); 
+snek_object_t *snek_add(snek_object_t *a, snek_object_t *b);  
 
 

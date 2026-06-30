@@ -1,48 +1,14 @@
 #include "sneknew.h"
+#include "refcount.h"
 #include <stdlib.h>
+#include <string.h>
+
 snek_object_t *_new_snek_object(){
 	snek_object_t *obj = calloc(1, sizeof(snek_object_t)); 
 	if(obj == NULL) return NULL;
 	
 	obj -> refcount = 1; 
 	return obj;
-}
-
-void refcount_inc(snek_object_t *obj){
-	if(obj == NULL) return;
-	obj -> refcount ++; 
-
-	return; 
-}
-
-void refcount_dec(snek_object_t *obj){
-	if(obj == NULL) return ; 
-	obj -> refcount --; 
-	if(obj -> refcount <= 0) refcount_free(obj); 
-	return ; 
-}
-
-void refcount_free(snek_object_t *obj){
-	switch(obj -> kind){
-		case(INTEGER) : break; 
-		case(FLOAT) : break; 
-		case(STRING) : {
-			free(obj -> data.v_string);
-			break; 
-		}
-		case(VECTOR3) : {
-			refcount_dec(obj -> data.v_vector.x);
-			refcount_dec(obj -> data.v_vector.y);
-			refcount_dec(obj -> data.v_vector.z);
-			break; 
-		}
-		case(ARRAY) : {
-	 		snek_array_t arr = obj -> data.v_array; 
-			for(int i = 0; i < arr.size; i++)refcount_dec(arr.elements[i]);
-			break; 
-		}
-		free(obj); 				
-	}
 }
 
 snek_object_t *new_snek_integer(int value){
@@ -82,6 +48,11 @@ snek_object_t *new_snek_vector(snek_object_t *X, snek_object_t *Y, snek_object_t
 	obj -> data.v_vector.x = X; 
 	obj -> data.v_vector.y = Y; 
 	obj -> data.v_vector.z = Z; 
+	
+	refcount_inc(X);
+	refcount_inc(Y);
+	refcount_inc(Z);
+	
        	return obj;	
 }
 

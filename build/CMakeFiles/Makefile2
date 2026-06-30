@@ -81,12 +81,12 @@ clean: CMakeFiles/gc_engine.dir/clean
 CMakeFiles/gc_engine.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=1,2,3,4 "Built target gc_engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target gc_engine"
 .PHONY : CMakeFiles/gc_engine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gc_engine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gc_engine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles 0
 .PHONY : CMakeFiles/gc_engine.dir/rule

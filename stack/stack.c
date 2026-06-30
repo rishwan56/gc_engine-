@@ -1,5 +1,4 @@
 #include "stack.h"
-#include "munit.h"
 #include <stdio.h>
 
 void stack_push(stack_t *stack, void *obj) {

@@ -177,6 +177,30 @@ objects/snekobject.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/objects/snekobject.c.s
 .PHONY : objects/snekobject.c.s
 
+reference_counting/refcount.o: reference_counting/refcount.c.o
+.PHONY : reference_counting/refcount.o
+
+# target to build an object file
+reference_counting/refcount.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/refcount.c.o
+.PHONY : reference_counting/refcount.c.o
+
+reference_counting/refcount.i: reference_counting/refcount.c.i
+.PHONY : reference_counting/refcount.i
+
+# target to preprocess a source file
+reference_counting/refcount.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/refcount.c.i
+.PHONY : reference_counting/refcount.c.i
+
+reference_counting/refcount.s: reference_counting/refcount.c.s
+.PHONY : reference_counting/refcount.s
+
+# target to generate assembly for a file
+reference_counting/refcount.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/refcount.c.s
+.PHONY : reference_counting/refcount.c.s
+
 reference_counting/sneknew.o: reference_counting/sneknew.c.o
 .PHONY : reference_counting/sneknew.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... objects/snekobject.o"
 	@echo "... objects/snekobject.i"
 	@echo "... objects/snekobject.s"
+	@echo "... reference_counting/refcount.o"
+	@echo "... reference_counting/refcount.i"
+	@echo "... reference_counting/refcount.s"
 	@echo "... reference_counting/sneknew.o"
 	@echo "... reference_counting/sneknew.i"
 	@echo "... reference_counting/sneknew.s"

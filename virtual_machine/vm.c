@@ -44,9 +44,9 @@ void trace_blacken_objects(stack_t *gray_objects, snek_object_t *obj){
 		case FLOAT : break;
 		case STRING : break;
 		case VECTOR3: {
-			      	trace_mark_objects(gray_objects, obj -> data.v_vector3.x);
-			      	trace_mark_objects(gray_objects, obj -> data.v_vector3.y);
-			      	trace_mark_objects(gray_objects, obj -> data.v_vector3.z);
+			      	trace_mark_objects(gray_objects, obj -> data.v_vector.x);
+			      	trace_mark_objects(gray_objects, obj -> data.v_vector.y);
+			      	trace_mark_objects(gray_objects, obj -> data.v_vector.z);
 				break; 
 			      }	      
 		case ARRAY : {
