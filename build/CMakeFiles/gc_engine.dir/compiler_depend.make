@@ -3,6 +3,7 @@
 
 CMakeFiles/gc_engine.dir/main.c.o: /home/rishwan56/rishwan_program/gc_engine-/main.c \
   /home/rishwan56/rishwan_program/gc_engine-/objects/snekobject.h \
+  /home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \
@@ -33,14 +34,32 @@ CMakeFiles/gc_engine.dir/main.c.o: /home/rishwan56/rishwan_program/gc_engine-/ma
 
 CMakeFiles/gc_engine.dir/objects/snekobject.c.o: /home/rishwan56/rishwan_program/gc_engine-/objects/snekobject.c \
   /home/rishwan56/rishwan_program/gc_engine-/objects/snekobject.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+
+CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o: /home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.c \
+  /home/rishwan56/rishwan_program/gc_engine-/objects/snekobject.h \
+  /home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.h \
   /usr/include/alloca.h \
   /usr/include/endian.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
@@ -60,11 +79,9 @@ CMakeFiles/gc_engine.dir/objects/snekobject.c.o: /home/rishwan56/rishwan_program
   /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/timesize.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
@@ -90,11 +107,9 @@ CMakeFiles/gc_engine.dir/objects/snekobject.c.o: /home/rishwan56/rishwan_program
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/strings.h:
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
@@ -102,9 +117,9 @@ CMakeFiles/gc_engine.dir/objects/snekobject.c.o: /home/rishwan56/rishwan_program
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/stdlib.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
@@ -119,8 +134,6 @@ CMakeFiles/gc_engine.dir/objects/snekobject.c.o: /home/rishwan56/rishwan_program
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/alloca.h:
 
@@ -141,6 +154,16 @@ CMakeFiles/gc_engine.dir/objects/snekobject.c.o: /home/rishwan56/rishwan_program
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+
+/usr/include/strings.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
@@ -164,8 +187,6 @@ CMakeFiles/gc_engine.dir/objects/snekobject.c.o: /home/rishwan56/rishwan_program
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
@@ -181,6 +202,8 @@ CMakeFiles/gc_engine.dir/objects/snekobject.c.o: /home/rishwan56/rishwan_program
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/stdc-predef.h:
+
+/home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.c:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
@@ -205,5 +228,3 @@ CMakeFiles/gc_engine.dir/objects/snekobject.c.o: /home/rishwan56/rishwan_program
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
