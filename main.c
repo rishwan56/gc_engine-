@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include "snekobject.h"
+
+#ifdef USE_MARK_SWEEP 
+#include "msneknew.h"
+#else 
 #include "sneknew.h"
+#endif
 
 int main(){
 	//integer check 
@@ -71,6 +76,7 @@ int main(){
 	printf("%s\n", array3.elements[6] -> data.v_string); 
 	printf("x = %d\ny = %f\nz = %s\n\n", array3.elements[7] -> data.v_vector.x -> data.v_int,  array3.elements[7]  -> data.v_vector.y -> data.v_float, array3.elements[7] -> data.v_vector.z -> data.v_string); 
 	printf("all working fine\n");
+	printf("2 methods combined \n");
 	return 0; 
 }
 
