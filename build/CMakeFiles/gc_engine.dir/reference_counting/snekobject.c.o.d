@@ -1,7 +1,7 @@
-CMakeFiles/gc_engine.dir/objects/snekobject.c.o: \
- /home/rishwan56/rishwan_program/gc_engine-/objects/snekobject.c \
+CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o: \
+ /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.c \
  /usr/include/stdc-predef.h \
- /home/rishwan56/rishwan_program/gc_engine-/objects/snekobject.h \
+ /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /home/rishwan56/rishwan_program/gc_engine-/reference_counting/refcount.h \

@@ -24,6 +24,6 @@ CMakeFiles/gc_engine.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/rishwan56/rishwan_program/gc_engine-/objects/snekobject.h \
+ /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
  /home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.h

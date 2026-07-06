@@ -6,7 +6,7 @@ if(USE_MARK_SWEEP)
 	add_executable(
 		gc_engine
 		main.c 
-		objects/snekobject.c 
+		mark_and_sweep/snekobject.c 
 		stack/stack.c
 		mark_and_sweep/sneknew.c 
 		mark_and_sweep/vm.c 
@@ -18,7 +18,7 @@ else()
 	add_executable(
 		gc_engine
 		main.c	 
-		objects/snekobject.c
+		reference_counting/snekobject.c
 		reference_counting/sneknew.c 
 		reference_counting/refcount.c
 	)

@@ -83,19 +83,19 @@ CMakeFiles/gc_engine.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gc_engine.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rishwan56/rishwan_program/gc_engine-/main.c -o CMakeFiles/gc_engine.dir/main.c.s
 
-CMakeFiles/gc_engine.dir/objects/snekobject.c.o: CMakeFiles/gc_engine.dir/flags.make
-CMakeFiles/gc_engine.dir/objects/snekobject.c.o: /home/rishwan56/rishwan_program/gc_engine-/objects/snekobject.c
-CMakeFiles/gc_engine.dir/objects/snekobject.c.o: CMakeFiles/gc_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/gc_engine.dir/objects/snekobject.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gc_engine.dir/objects/snekobject.c.o -MF CMakeFiles/gc_engine.dir/objects/snekobject.c.o.d -o CMakeFiles/gc_engine.dir/objects/snekobject.c.o -c /home/rishwan56/rishwan_program/gc_engine-/objects/snekobject.c
+CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o: CMakeFiles/gc_engine.dir/flags.make
+CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o: /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.c
+CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o: CMakeFiles/gc_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o -MF CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o.d -o CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o -c /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.c
 
-CMakeFiles/gc_engine.dir/objects/snekobject.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gc_engine.dir/objects/snekobject.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rishwan56/rishwan_program/gc_engine-/objects/snekobject.c > CMakeFiles/gc_engine.dir/objects/snekobject.c.i
+CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.c > CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.i
 
-CMakeFiles/gc_engine.dir/objects/snekobject.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gc_engine.dir/objects/snekobject.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rishwan56/rishwan_program/gc_engine-/objects/snekobject.c -o CMakeFiles/gc_engine.dir/objects/snekobject.c.s
+CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.c -o CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.s
 
 CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o: CMakeFiles/gc_engine.dir/flags.make
 CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o: /home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.c
@@ -128,7 +128,7 @@ CMakeFiles/gc_engine.dir/reference_counting/refcount.c.s: cmake_force
 # Object files for target gc_engine
 gc_engine_OBJECTS = \
 "CMakeFiles/gc_engine.dir/main.c.o" \
-"CMakeFiles/gc_engine.dir/objects/snekobject.c.o" \
+"CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o" \
 "CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o" \
 "CMakeFiles/gc_engine.dir/reference_counting/refcount.c.o"
 
@@ -136,7 +136,7 @@ gc_engine_OBJECTS = \
 gc_engine_EXTERNAL_OBJECTS =
 
 gc_engine: CMakeFiles/gc_engine.dir/main.c.o
-gc_engine: CMakeFiles/gc_engine.dir/objects/snekobject.c.o
+gc_engine: CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o
 gc_engine: CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o
 gc_engine: CMakeFiles/gc_engine.dir/reference_counting/refcount.c.o
 gc_engine: CMakeFiles/gc_engine.dir/build.make
