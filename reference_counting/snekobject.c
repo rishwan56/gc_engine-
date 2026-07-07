@@ -69,9 +69,9 @@ snek_object_t *snek_add(snek_object_t *a, snek_object_t *b){
 		}
 		case(VECTOR3) : {
 				if(b -> kind != VECTOR3) return NULL; 
-				snek_object_t *new_x = snek_add(a -> data.v_vector.x, b -> data.v_vector.x);
-				snek_object_t *new_y = snek_add(a -> data.v_vector.y, b -> data.v_vector.y);
-				snek_object_t *new_z = snek_add(a -> data.v_vector.z, b -> data.v_vector.z);
+				snek_object_t *new_x = snek_add(a -> data.v_vector3.x, b -> data.v_vector3.x);
+				snek_object_t *new_y = snek_add(a -> data.v_vector3.y, b -> data.v_vector3.y);
+				snek_object_t *new_z = snek_add(a -> data.v_vector3.z, b -> data.v_vector3.z);
 				snek_object_t *res = new_snek_vector(new_x, new_y, new_z);
 				refcount_dec(new_x);
 				refcount_dec(new_y);

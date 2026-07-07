@@ -1,10 +1,10 @@
-#include "msneknew.h"
+#include "sneknew.h"
 #include "snekobject.h"
 #include "vm.h"
 #include <stdlib.h>
 #include <string.h>
 
-snek_object_t *_ms_new_snek_object(vm_t *vm) {
+snek_object_t *_new_snek_object(vm_t *vm) {
   snek_object_t *obj = calloc(1, sizeof(snek_object_t));
   if (obj == NULL) {
     return NULL;
@@ -16,8 +16,8 @@ snek_object_t *_ms_new_snek_object(vm_t *vm) {
 
 // don't touch below this line
 
-snek_object_t *ms_new_snek_array(vm_t *vm, size_t size) {
-  snek_object_t *obj = _ms_new_snek_object(vm);
+snek_object_t *new_snek_array(vm_t *vm, size_t size) {
+  snek_object_t *obj = _new_snek_object(vm);
   if (obj == NULL) {
     return NULL;
   }
@@ -34,25 +34,25 @@ snek_object_t *ms_new_snek_array(vm_t *vm, size_t size) {
   return obj;
 }
 
-snek_object_t *ms_new_snek_vector3(vm_t *vm, snek_object_t *x, snek_object_t *y,
-                                 snek_object_t *z) {
+snek_object_t *new_snek_vector3(vm_t *vm, snek_object_t *x, snek_object_t *y,
+                                snek_object_t *z) {
   if (x == NULL || y == NULL || z == NULL) {
     return NULL;
   }
 
-  snek_object_t *obj = _ms_new_snek_object(vm);
+  snek_object_t *obj = _new_snek_object(vm);
   if (obj == NULL) {
     return NULL;
   }
 
   obj->kind = VECTOR3;
-  obj->data.v_vector = (snek_vector_t){.x = x, .y = y, .z = z};
+  obj->data.v_vector3 = (snek_vector_t){.x = x, .y = y, .z = z};
 
   return obj;
 }
 
-snek_object_t *ms_new_snek_integer(vm_t *vm, int value) {
-  snek_object_t *obj = _ms_new_snek_object(vm);
+snek_object_t *new_snek_integer(vm_t *vm, int value) {
+  snek_object_t *obj = _new_snek_object(vm);
   if (obj == NULL) {
     return NULL;
   }
@@ -63,8 +63,8 @@ snek_object_t *ms_new_snek_integer(vm_t *vm, int value) {
   return obj;
 }
 
-snek_object_t *ms_new_snek_float(vm_t *vm, float value) {
-  snek_object_t *obj = _ms_new_snek_object(vm);
+snek_object_t *new_snek_float(vm_t *vm, float value) {
+  snek_object_t *obj = _new_snek_object(vm);
   if (obj == NULL) {
     return NULL;
   }
@@ -74,8 +74,8 @@ snek_object_t *ms_new_snek_float(vm_t *vm, float value) {
   return obj;
 }
 
-snek_object_t *ms_new_snek_string(vm_t *vm, char *value) {
-  snek_object_t *obj = _ms_new_snek_object(vm);
+snek_object_t *new_snek_string(vm_t *vm, char *value) {
+  snek_object_t *obj = _new_snek_object(vm);
   if (obj == NULL) {
     return NULL;
   }

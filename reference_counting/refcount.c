@@ -24,9 +24,9 @@ void refcount_free(snek_object_t *obj){
 			break; 
 		}
 		case(VECTOR3) : {
-			refcount_dec(obj -> data.v_vector.x);
-			refcount_dec(obj -> data.v_vector.y);
-			refcount_dec(obj -> data.v_vector.z);
+			refcount_dec(obj -> data.v_vector3.x);
+			refcount_dec(obj -> data.v_vector3.y);
+			refcount_dec(obj -> data.v_vector3.z);
 			break; 
 		}
 		case(ARRAY) : {

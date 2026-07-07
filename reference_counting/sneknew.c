@@ -45,9 +45,9 @@ snek_object_t *new_snek_vector(snek_object_t *X, snek_object_t *Y, snek_object_t
 	if(obj == NULL) return NULL;
 	
 	obj -> kind = VECTOR3;
-	obj -> data.v_vector.x = X; 
-	obj -> data.v_vector.y = Y; 
-	obj -> data.v_vector.z = Z; 
+	obj -> data.v_vector3.x = X; 
+	obj -> data.v_vector3.y = Y; 
+	obj -> data.v_vector3.z = Z; 
 	
 	refcount_inc(X);
 	refcount_inc(Y);
