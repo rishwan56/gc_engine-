@@ -1,3 +1,4 @@
+#include "snekobject.h"
 #include "refcount.h"
 #include <string.h>
 #include <stdlib.h>
