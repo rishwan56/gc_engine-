@@ -199,7 +199,7 @@ GarbageCollector_IS_TOP_LEVEL:STATIC=ON
 GarbageCollector_SOURCE_DIR:STATIC=/home/rishwan56/rishwan_program/gc_engine-
 
 //Build with Mark and Sweep GC
-USE_MARK_SWEEP:BOOL=ON
+USE_MARK_SWEEP:BOOL=OFF
 
 
 ########################

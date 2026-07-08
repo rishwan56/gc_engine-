@@ -1,4 +1,3 @@
-#include "sneknew.h"
 #include "refcount.h"
 #include <stdlib.h>
 #include <string.h>

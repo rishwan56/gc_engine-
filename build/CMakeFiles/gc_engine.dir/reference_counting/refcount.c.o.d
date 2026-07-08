@@ -1,8 +1,10 @@
-CMakeFiles/gc_engine.dir/mark_and_sweep/snekobject.c.o: \
- /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/snekobject.c \
+CMakeFiles/gc_engine.dir/reference_counting/refcount.c.o: \
+ /home/rishwan56/rishwan_program/gc_engine-/reference_counting/refcount.c \
  /usr/include/stdc-predef.h \
- /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/snekobject.h \
- /home/rishwan56/rishwan_program/gc_engine-/stack/stack.h \
+ /home/rishwan56/rishwan_program/gc_engine-/reference_counting/refcount.h \
+ /home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.h \
+ /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -41,11 +43,4 @@ CMakeFiles/gc_engine.dir/mark_and_sweep/snekobject.c.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
- /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/sneknew.h \
- /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/vm.h \
- /usr/include/string.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h

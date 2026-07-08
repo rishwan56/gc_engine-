@@ -14,7 +14,6 @@ snek_object_t *_new_snek_object(vm_t *vm) {
   return obj;
 }
 
-// don't touch below this line
 
 snek_object_t *new_snek_array(vm_t *vm, size_t size) {
   snek_object_t *obj = _new_snek_object(vm);

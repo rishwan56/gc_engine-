@@ -1,8 +1,5 @@
 #include <stdio.h>
-#include "snekobject.h"
-
-
-#include "sneknew.h"
+#include "refcount.h"
 
 int main(){
 	//integer check 
