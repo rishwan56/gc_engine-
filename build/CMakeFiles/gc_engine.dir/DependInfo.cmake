@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/rishwan56/rishwan_program/gc_engine-/main.c" "CMakeFiles/gc_engine.dir/main.c.o" "gcc" "CMakeFiles/gc_engine.dir/main.c.o.d"
+  "/home/rishwan56/rishwan_program/gc_engine-/cycletest.c" "CMakeFiles/gc_engine.dir/cycletest.c.o" "gcc" "CMakeFiles/gc_engine.dir/cycletest.c.o.d"
   "/home/rishwan56/rishwan_program/gc_engine-/reference_counting/refcount.c" "CMakeFiles/gc_engine.dir/reference_counting/refcount.c.o" "gcc" "CMakeFiles/gc_engine.dir/reference_counting/refcount.c.o.d"
   "/home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.c" "CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o" "gcc" "CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o.d"
   "/home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.c" "CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o" "gcc" "CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o.d"

@@ -1,6 +1,7 @@
 
 #include "refcount.h" 
 #include <stdlib.h>
+#include <stdio.h>
 
 void refcount_inc(snek_object_t *obj){
 	if(obj == NULL) return;
@@ -17,6 +18,7 @@ void refcount_dec(snek_object_t *obj){
 }
 
 void refcount_free(snek_object_t *obj){
+	printf("[GC] Freeing object of kind %d at %p\n", obj->kind, (void*)obj);
 	switch(obj -> kind){
 		case(INTEGER) : break; 
 		case(FLOAT) : break; 

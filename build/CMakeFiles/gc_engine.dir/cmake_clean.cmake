@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/gc_engine.dir/main.c.o"
-  "CMakeFiles/gc_engine.dir/main.c.o.d"
+  "CMakeFiles/gc_engine.dir/cycletest.c.o"
+  "CMakeFiles/gc_engine.dir/cycletest.c.o.d"
   "CMakeFiles/gc_engine.dir/reference_counting/refcount.c.o"
   "CMakeFiles/gc_engine.dir/reference_counting/refcount.c.o.d"
   "CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o"

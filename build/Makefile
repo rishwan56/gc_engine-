@@ -129,29 +129,29 @@ gc_engine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/build
 .PHONY : gc_engine/fast
 
-main.o: main.c.o
-.PHONY : main.o
+cycletest.o: cycletest.c.o
+.PHONY : cycletest.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/main.c.o
-.PHONY : main.c.o
+cycletest.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/cycletest.c.o
+.PHONY : cycletest.c.o
 
-main.i: main.c.i
-.PHONY : main.i
+cycletest.i: cycletest.c.i
+.PHONY : cycletest.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/main.c.i
-.PHONY : main.c.i
+cycletest.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/cycletest.c.i
+.PHONY : cycletest.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+cycletest.s: cycletest.c.s
+.PHONY : cycletest.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/main.c.s
-.PHONY : main.c.s
+cycletest.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/cycletest.c.s
+.PHONY : cycletest.c.s
 
 reference_counting/refcount.o: reference_counting/refcount.c.o
 .PHONY : reference_counting/refcount.o
@@ -234,9 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gc_engine"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... cycletest.o"
+	@echo "... cycletest.i"
+	@echo "... cycletest.s"
 	@echo "... reference_counting/refcount.o"
 	@echo "... reference_counting/refcount.i"
 	@echo "... reference_counting/refcount.s"

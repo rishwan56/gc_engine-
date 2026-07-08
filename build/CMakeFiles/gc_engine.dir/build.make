@@ -69,19 +69,19 @@ include CMakeFiles/gc_engine.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/gc_engine.dir/flags.make
 
-CMakeFiles/gc_engine.dir/main.c.o: CMakeFiles/gc_engine.dir/flags.make
-CMakeFiles/gc_engine.dir/main.c.o: /home/rishwan56/rishwan_program/gc_engine-/main.c
-CMakeFiles/gc_engine.dir/main.c.o: CMakeFiles/gc_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/gc_engine.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gc_engine.dir/main.c.o -MF CMakeFiles/gc_engine.dir/main.c.o.d -o CMakeFiles/gc_engine.dir/main.c.o -c /home/rishwan56/rishwan_program/gc_engine-/main.c
+CMakeFiles/gc_engine.dir/cycletest.c.o: CMakeFiles/gc_engine.dir/flags.make
+CMakeFiles/gc_engine.dir/cycletest.c.o: /home/rishwan56/rishwan_program/gc_engine-/cycletest.c
+CMakeFiles/gc_engine.dir/cycletest.c.o: CMakeFiles/gc_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/gc_engine.dir/cycletest.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gc_engine.dir/cycletest.c.o -MF CMakeFiles/gc_engine.dir/cycletest.c.o.d -o CMakeFiles/gc_engine.dir/cycletest.c.o -c /home/rishwan56/rishwan_program/gc_engine-/cycletest.c
 
-CMakeFiles/gc_engine.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gc_engine.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rishwan56/rishwan_program/gc_engine-/main.c > CMakeFiles/gc_engine.dir/main.c.i
+CMakeFiles/gc_engine.dir/cycletest.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gc_engine.dir/cycletest.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rishwan56/rishwan_program/gc_engine-/cycletest.c > CMakeFiles/gc_engine.dir/cycletest.c.i
 
-CMakeFiles/gc_engine.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gc_engine.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rishwan56/rishwan_program/gc_engine-/main.c -o CMakeFiles/gc_engine.dir/main.c.s
+CMakeFiles/gc_engine.dir/cycletest.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gc_engine.dir/cycletest.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rishwan56/rishwan_program/gc_engine-/cycletest.c -o CMakeFiles/gc_engine.dir/cycletest.c.s
 
 CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o: CMakeFiles/gc_engine.dir/flags.make
 CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o: /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.c
@@ -127,7 +127,7 @@ CMakeFiles/gc_engine.dir/reference_counting/refcount.c.s: cmake_force
 
 # Object files for target gc_engine
 gc_engine_OBJECTS = \
-"CMakeFiles/gc_engine.dir/main.c.o" \
+"CMakeFiles/gc_engine.dir/cycletest.c.o" \
 "CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o" \
 "CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o" \
 "CMakeFiles/gc_engine.dir/reference_counting/refcount.c.o"
@@ -135,7 +135,7 @@ gc_engine_OBJECTS = \
 # External object files for target gc_engine
 gc_engine_EXTERNAL_OBJECTS =
 
-gc_engine: CMakeFiles/gc_engine.dir/main.c.o
+gc_engine: CMakeFiles/gc_engine.dir/cycletest.c.o
 gc_engine: CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o
 gc_engine: CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o
 gc_engine: CMakeFiles/gc_engine.dir/reference_counting/refcount.c.o
