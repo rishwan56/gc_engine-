@@ -17,7 +17,7 @@ if(USE_MARK_SWEEP)
 else()
 	add_executable(
 		gc_engine
-		cycletest.c	 
+		main.c	 
 		reference_counting/snekobject.c
 		reference_counting/sneknew.c 
 		reference_counting/refcount.c

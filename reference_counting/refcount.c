@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+int total_live_allocation; 
+
 void refcount_inc(snek_object_t *obj){
 	if(obj == NULL) return;
 	obj -> refcount ++; 
@@ -24,6 +26,7 @@ void refcount_free(snek_object_t *obj){
 		case(FLOAT) : break; 
 		case(STRING) : {
 			free(obj -> data.v_string);
+			total_live_allocation--; 
 			break; 
 		}
 		case(VECTOR3) : {
@@ -36,9 +39,11 @@ void refcount_free(snek_object_t *obj){
 	 		snek_array_t arr = obj -> data.v_array; 
 			for(size_t i = 0; i < arr.size; i++)refcount_dec(arr.elements[i]);
 			free(arr.elements);
+			total_live_allocation--; 
 			break; 
 		}
 	}
 	free(obj); 				
+	total_live_allocation--; 
 }
 

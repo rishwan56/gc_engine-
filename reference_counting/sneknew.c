@@ -3,10 +3,12 @@
 #include <stdlib.h>
 #include <string.h>
 
+//int total_live_allocation; 
+
 snek_object_t *_new_snek_object(){
 	snek_object_t *obj = calloc(1, sizeof(snek_object_t)); 
 	if(obj == NULL) return NULL;
-	
+	total_live_allocation++; 
 	obj -> refcount = 1; 
 	return obj;
 }
