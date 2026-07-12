@@ -2,7 +2,7 @@
 
 #include"snekobject.h" 
 #include "vm.h"
-
+extern int total_live_allocation; 
 
 snek_object_t* new_snek_integer(vm_t* t, int value);
 snek_object_t* new_snek_float(vm_t* t, float value);

@@ -1,7 +1,6 @@
 #include "snekobject.h"
 #include "sneknew.h"
 #include <string.h>
-
 void snek_object_free(snek_object_t *obj) {
   switch (obj->kind) {
   case INTEGER:
@@ -22,6 +21,7 @@ void snek_object_free(snek_object_t *obj) {
   }
 
   free(obj);
+  total_live_allocation--;
 }
 
 bool snek_array_set(snek_object_t *array, size_t index, snek_object_t *value) {

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(GarbageCollector C)
 
-option(USE_MARK_SWEEP "Build with Mark and Sweep GC" OFF)
+option(USE_MARK_SWEEP "Build with Mark and Sweep GC" ON)
 if(USE_MARK_SWEEP)
 	add_executable(
 		gc_engine

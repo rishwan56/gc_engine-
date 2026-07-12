@@ -4,12 +4,16 @@
 #include <stdlib.h>
 #include <string.h>
 
+int total_live_allocation = 0;
+
 snek_object_t *_new_snek_object(vm_t *vm) {
-  snek_object_t *obj = calloc(1, sizeof(snek_object_t));
+
+snek_object_t *obj = calloc(1, sizeof(snek_object_t));
   if (obj == NULL) {
     return NULL;
   }
   vm_track_object(vm, obj);
+  total_live_allocation++; 
   obj -> is_marked = false; 
   return obj;
 }
