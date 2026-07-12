@@ -39,12 +39,6 @@ int main(){
 	snek_object_t *vector = array.elements[3]; 
 	printf("x = %d\ny = %f\nz = %s\n\n", vector -> data.v_vector3.x -> data.v_int,  vector -> data.v_vector3.y -> data.v_float, vector -> data.v_vector3.z -> data.v_string); 
 	printf("total alive objects = %d\n\n", total_live_allocation);	
-	refcount_dec(arr); 
-	refcount_dec(arr);
-	refcount_dec(stringa); 
-	refcount_dec(floata);
-	refcount_dec(inta); 
-	printf("%d\n\n", total_live_allocation); 	
 	//len :
 	printf("length:\nint = %d\nfloat = %d\nstring = %d\nvector = %d\narray1 = %d\n\n", snek_len(inta), snek_len(floata), snek_len(stringa), snek_len(vectora), snek_len(arr)); 
 	snek_object_t *intb = new_snek_integer(10); 
@@ -58,12 +52,14 @@ int main(){
 	snek_array_set(arr2, 2, stringb); 
 	snek_array_set(arr2, 3, vectorb); 
 
+	printf("total alive objects after 2nd  = %d\n\n", total_live_allocation); 	
 	snek_object_t *intc = snek_add(inta, intb); 
 	snek_object_t *floatc = snek_add(floata, floatb);
 	snek_object_t *stringc = snek_add(stringa, stringb); 
 	snek_object_t *vectorc = snek_add(vectora, vectorb);
 	snek_object_t *arr3 = snek_add(arr, arr2); 
 
+	printf("total alive objects after 3rd  = %d\n\n", total_live_allocation); 	
 	printf("addition : \n"); 
 	printf("%d\n", intc -> data.v_int); 
 	printf("%f\n", floatc -> data.v_float);
@@ -80,6 +76,23 @@ int main(){
 	printf("%f\n", array3.elements[5] -> data.v_float);
 	printf("%s\n", array3.elements[6] -> data.v_string); 
 	printf("x = %d\ny = %f\nz = %s\n\n", array3.elements[7] -> data.v_vector3.x -> data.v_int,  array3.elements[7]  -> data.v_vector3.y -> data.v_float, array3.elements[7] -> data.v_vector3.z -> data.v_string); 
+	refcount_dec(arr); 
+	refcount_dec(vectora);
+	refcount_dec(stringa); 
+	refcount_dec(floata);
+	refcount_dec(inta); 
+	printf("total alive object = %d\n\n", total_live_allocation);
+	refcount_dec(arr2); 
+	refcount_dec(vectorb);
+	refcount_dec(stringb); 
+	refcount_dec(floatb);
+	refcount_dec(intb); 
+	printf("total alive object = %d\n\n", total_live_allocation);
+	refcount_dec(arr3); 
+	refcount_dec(vectorc);
+	refcount_dec(stringc); 
+	refcount_dec(floatc);
+	refcount_dec(intc); 
 	printf("total alive objects = %d\n\n", total_live_allocation);	
 	printf("all working fine\n");
 	printf("2 methods combined \n");

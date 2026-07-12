@@ -20,13 +20,12 @@ void refcount_dec(snek_object_t *obj){
 }
 
 void refcount_free(snek_object_t *obj){
-	printf("[GC] Freeing object of kind %d at %p\n", obj->kind, (void*)obj);
+	//printf("[GC] Freeing object of kind %d at %p\n", obj->kind, (void*)obj);
 	switch(obj -> kind){
 		case(INTEGER) : break; 
 		case(FLOAT) : break; 
 		case(STRING) : {
 			free(obj -> data.v_string);
-			total_live_allocation--; 
 			break; 
 		}
 		case(VECTOR3) : {
@@ -39,7 +38,6 @@ void refcount_free(snek_object_t *obj){
 	 		snek_array_t arr = obj -> data.v_array; 
 			for(size_t i = 0; i < arr.size; i++)refcount_dec(arr.elements[i]);
 			free(arr.elements);
-			total_live_allocation--; 
 			break; 
 		}
 	}

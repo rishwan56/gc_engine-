@@ -98,7 +98,7 @@ snek_object_t *snek_add(snek_object_t *a, snek_object_t *b){
 
 void snek_object_free(snek_object_t *obj) {
 	if (obj == NULL) return;
-	switch (obj->kind) {
+switch (obj->kind) {
 		case INTEGER:
 		case FLOAT:
 			break;
