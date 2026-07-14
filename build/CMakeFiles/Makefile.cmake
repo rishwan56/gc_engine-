@@ -41,4 +41,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/gc_engine.dir/DependInfo.cmake"
+  "CMakeFiles/gc_benchmark.dir/DependInfo.cmake"
   )

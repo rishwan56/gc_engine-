@@ -129,6 +129,43 @@ gc_engine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/build
 .PHONY : gc_engine/fast
 
+#=============================================================================
+# Target rules for targets named gc_benchmark
+
+# Build rule for target.
+gc_benchmark: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gc_benchmark
+.PHONY : gc_benchmark
+
+# fast build rule for target.
+gc_benchmark/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/build
+.PHONY : gc_benchmark/fast
+
+benchmark.o: benchmark.c.o
+.PHONY : benchmark.o
+
+# target to build an object file
+benchmark.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/benchmark.c.o
+.PHONY : benchmark.c.o
+
+benchmark.i: benchmark.c.i
+.PHONY : benchmark.i
+
+# target to preprocess a source file
+benchmark.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/benchmark.c.i
+.PHONY : benchmark.c.i
+
+benchmark.s: benchmark.c.s
+.PHONY : benchmark.s
+
+# target to generate assembly for a file
+benchmark.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/benchmark.c.s
+.PHONY : benchmark.c.s
+
 main2.o: main2.c.o
 .PHONY : main2.o
 
@@ -159,6 +196,7 @@ mark_and_sweep/sneknew.o: mark_and_sweep/sneknew.c.o
 # target to build an object file
 mark_and_sweep/sneknew.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/sneknew.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.o
 .PHONY : mark_and_sweep/sneknew.c.o
 
 mark_and_sweep/sneknew.i: mark_and_sweep/sneknew.c.i
@@ -167,6 +205,7 @@ mark_and_sweep/sneknew.i: mark_and_sweep/sneknew.c.i
 # target to preprocess a source file
 mark_and_sweep/sneknew.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/sneknew.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.i
 .PHONY : mark_and_sweep/sneknew.c.i
 
 mark_and_sweep/sneknew.s: mark_and_sweep/sneknew.c.s
@@ -175,6 +214,7 @@ mark_and_sweep/sneknew.s: mark_and_sweep/sneknew.c.s
 # target to generate assembly for a file
 mark_and_sweep/sneknew.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/sneknew.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.s
 .PHONY : mark_and_sweep/sneknew.c.s
 
 mark_and_sweep/snekobject.o: mark_and_sweep/snekobject.c.o
@@ -183,6 +223,7 @@ mark_and_sweep/snekobject.o: mark_and_sweep/snekobject.c.o
 # target to build an object file
 mark_and_sweep/snekobject.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/snekobject.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.o
 .PHONY : mark_and_sweep/snekobject.c.o
 
 mark_and_sweep/snekobject.i: mark_and_sweep/snekobject.c.i
@@ -191,6 +232,7 @@ mark_and_sweep/snekobject.i: mark_and_sweep/snekobject.c.i
 # target to preprocess a source file
 mark_and_sweep/snekobject.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/snekobject.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.i
 .PHONY : mark_and_sweep/snekobject.c.i
 
 mark_and_sweep/snekobject.s: mark_and_sweep/snekobject.c.s
@@ -199,6 +241,7 @@ mark_and_sweep/snekobject.s: mark_and_sweep/snekobject.c.s
 # target to generate assembly for a file
 mark_and_sweep/snekobject.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/snekobject.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.s
 .PHONY : mark_and_sweep/snekobject.c.s
 
 mark_and_sweep/vm.o: mark_and_sweep/vm.c.o
@@ -207,6 +250,7 @@ mark_and_sweep/vm.o: mark_and_sweep/vm.c.o
 # target to build an object file
 mark_and_sweep/vm.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/vm.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.o
 .PHONY : mark_and_sweep/vm.c.o
 
 mark_and_sweep/vm.i: mark_and_sweep/vm.c.i
@@ -215,6 +259,7 @@ mark_and_sweep/vm.i: mark_and_sweep/vm.c.i
 # target to preprocess a source file
 mark_and_sweep/vm.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/vm.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.i
 .PHONY : mark_and_sweep/vm.c.i
 
 mark_and_sweep/vm.s: mark_and_sweep/vm.c.s
@@ -223,6 +268,7 @@ mark_and_sweep/vm.s: mark_and_sweep/vm.c.s
 # target to generate assembly for a file
 mark_and_sweep/vm.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/vm.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.s
 .PHONY : mark_and_sweep/vm.c.s
 
 stack/stack.o: stack/stack.c.o
@@ -231,6 +277,7 @@ stack/stack.o: stack/stack.c.o
 # target to build an object file
 stack/stack.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/stack/stack.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/stack/stack.c.o
 .PHONY : stack/stack.c.o
 
 stack/stack.i: stack/stack.c.i
@@ -239,6 +286,7 @@ stack/stack.i: stack/stack.c.i
 # target to preprocess a source file
 stack/stack.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/stack/stack.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/stack/stack.c.i
 .PHONY : stack/stack.c.i
 
 stack/stack.s: stack/stack.c.s
@@ -247,6 +295,7 @@ stack/stack.s: stack/stack.c.s
 # target to generate assembly for a file
 stack/stack.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/stack/stack.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/stack/stack.c.s
 .PHONY : stack/stack.c.s
 
 # Help Target
@@ -257,7 +306,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... gc_benchmark"
 	@echo "... gc_engine"
+	@echo "... benchmark.o"
+	@echo "... benchmark.i"
+	@echo "... benchmark.s"
 	@echo "... main2.o"
 	@echo "... main2.i"
 	@echo "... main2.s"

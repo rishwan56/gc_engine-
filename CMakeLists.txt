@@ -41,8 +41,8 @@ else()
 		benchmark.c 
 		reference_counting/snekobject.c
 		reference_counting/sneknew.c 
-		reference_counging/refcount.c 
-	)	I
+		reference_counting/refcount.c 
+	)	
 	target_include_directories(gc_benchmark PRIVATE objects reference_counting stack)
 endif()
 	
