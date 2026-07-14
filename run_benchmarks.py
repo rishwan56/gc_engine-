@@ -37,7 +37,7 @@ def main():
     print("\n" + "="*50)
     print("             COMPARATVIE ANALAYSIS REPORT")
     print("="*50)
-    print(f"{'Metric : <25'} | {'Reference Counting :' <20} | {'Mark & Sweep' : <15}")
+    print(f"{'Metric' : <25} | {'Reference Counting' : <20} | {'Mark & Sweep' : <15}")
     print("-"*50)
     print(f"{'Execution Time (sec)':<25} | {ref_time:<20.4f} | {ms_time:<15.4f}")   
     print(f"{'Peak Heap Objects':<25} | {ref_mem:<20} | {ms_mem:<15}")
