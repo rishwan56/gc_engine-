@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/gc_benchmark.dir/benchmark.c.o CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.o CMakeFiles/gc_benchmark.dir/stack/stack.c.o CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.o CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.o -o gc_benchmark 

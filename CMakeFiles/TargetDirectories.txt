@@ -1,0 +1,4 @@
+/home/rishwan56/rishwan_program/gc_engine-/CMakeFiles/gc_engine.dir
+/home/rishwan56/rishwan_program/gc_engine-/CMakeFiles/gc_benchmark.dir
+/home/rishwan56/rishwan_program/gc_engine-/CMakeFiles/edit_cache.dir
+/home/rishwan56/rishwan_program/gc_engine-/CMakeFiles/rebuild_cache.dir
