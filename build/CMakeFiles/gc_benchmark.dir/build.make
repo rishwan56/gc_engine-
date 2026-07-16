@@ -83,65 +83,81 @@ CMakeFiles/gc_benchmark.dir/benchmark.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gc_benchmark.dir/benchmark.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rishwan56/rishwan_program/gc_engine-/benchmark.c -o CMakeFiles/gc_benchmark.dir/benchmark.c.s
 
-CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.o: CMakeFiles/gc_benchmark.dir/flags.make
-CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.o: /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.c
-CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.o: CMakeFiles/gc_benchmark.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.o -MF CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.o.d -o CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.o -c /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.c
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.o: CMakeFiles/gc_benchmark.dir/flags.make
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.o: /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/snekobject.c
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.o: CMakeFiles/gc_benchmark.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.o -MF CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.o.d -o CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.o -c /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/snekobject.c
 
-CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.c > CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.i
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/snekobject.c > CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.i
 
-CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.c -o CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.s
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/snekobject.c -o CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.s
 
-CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.o: CMakeFiles/gc_benchmark.dir/flags.make
-CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.o: /home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.c
-CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.o: CMakeFiles/gc_benchmark.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.o -MF CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.o.d -o CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.o -c /home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.c
+CMakeFiles/gc_benchmark.dir/stack/stack.c.o: CMakeFiles/gc_benchmark.dir/flags.make
+CMakeFiles/gc_benchmark.dir/stack/stack.c.o: /home/rishwan56/rishwan_program/gc_engine-/stack/stack.c
+CMakeFiles/gc_benchmark.dir/stack/stack.c.o: CMakeFiles/gc_benchmark.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/gc_benchmark.dir/stack/stack.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gc_benchmark.dir/stack/stack.c.o -MF CMakeFiles/gc_benchmark.dir/stack/stack.c.o.d -o CMakeFiles/gc_benchmark.dir/stack/stack.c.o -c /home/rishwan56/rishwan_program/gc_engine-/stack/stack.c
 
-CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.c > CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.i
+CMakeFiles/gc_benchmark.dir/stack/stack.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gc_benchmark.dir/stack/stack.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rishwan56/rishwan_program/gc_engine-/stack/stack.c > CMakeFiles/gc_benchmark.dir/stack/stack.c.i
 
-CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.c -o CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.s
+CMakeFiles/gc_benchmark.dir/stack/stack.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gc_benchmark.dir/stack/stack.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rishwan56/rishwan_program/gc_engine-/stack/stack.c -o CMakeFiles/gc_benchmark.dir/stack/stack.c.s
 
-CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.o: CMakeFiles/gc_benchmark.dir/flags.make
-CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.o: /home/rishwan56/rishwan_program/gc_engine-/reference_counting/refcount.c
-CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.o: CMakeFiles/gc_benchmark.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.o -MF CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.o.d -o CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.o -c /home/rishwan56/rishwan_program/gc_engine-/reference_counting/refcount.c
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.o: CMakeFiles/gc_benchmark.dir/flags.make
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.o: /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/sneknew.c
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.o: CMakeFiles/gc_benchmark.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.o -MF CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.o.d -o CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.o -c /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/sneknew.c
 
-CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rishwan56/rishwan_program/gc_engine-/reference_counting/refcount.c > CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.i
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/sneknew.c > CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.i
 
-CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rishwan56/rishwan_program/gc_engine-/reference_counting/refcount.c -o CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.s
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/sneknew.c -o CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.s
+
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.o: CMakeFiles/gc_benchmark.dir/flags.make
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.o: /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/vm.c
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.o: CMakeFiles/gc_benchmark.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.o -MF CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.o.d -o CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.o -c /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/vm.c
+
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/vm.c > CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.i
+
+CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/vm.c -o CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.s
 
 # Object files for target gc_benchmark
 gc_benchmark_OBJECTS = \
 "CMakeFiles/gc_benchmark.dir/benchmark.c.o" \
-"CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.o" \
-"CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.o" \
-"CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.o"
+"CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.o" \
+"CMakeFiles/gc_benchmark.dir/stack/stack.c.o" \
+"CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.o" \
+"CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.o"
 
 # External object files for target gc_benchmark
 gc_benchmark_EXTERNAL_OBJECTS =
 
 gc_benchmark: CMakeFiles/gc_benchmark.dir/benchmark.c.o
-gc_benchmark: CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.o
-gc_benchmark: CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.o
-gc_benchmark: CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.o
+gc_benchmark: CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.o
+gc_benchmark: CMakeFiles/gc_benchmark.dir/stack/stack.c.o
+gc_benchmark: CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.o
+gc_benchmark: CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.o
 gc_benchmark: CMakeFiles/gc_benchmark.dir/build.make
 gc_benchmark: CMakeFiles/gc_benchmark.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable gc_benchmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rishwan56/rishwan_program/gc_engine-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable gc_benchmark"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gc_benchmark.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
