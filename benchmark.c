@@ -77,16 +77,15 @@ void run_benchmark() {
             refcount_dec(floata);                                                                                                                                                    
             refcount_dec(stringa);                                                                                                                                                   
 #endif                                                                                                                                                                           
-        }                                                                                                                                                                            
+	}                                                                                                                                                                            
                                                                                                                                                                                      
 #ifdef USE_MARK_SWEEP                                                                                                                                                            
         // Final clean up of VM                                                                                                                                                      
         vm_free(vm);                                                                                                                                                                 
 #endif                                                                                                                                                                           
-                                                                                                                                                                                     
-        clock_t end = clock();                                                                                                                                                       
-        double time_spent = (double)(end - start) / CLOCKS_PER_SEC;                                                                                                                  
-                                                                                                                                                                                     
+	clock_t end = clock(); 
+	double time_spent = (double)(end - start) / CLOCKS_PER_SEC; 	
+                                                                                                                                                                                    
         printf("=========================================\n");                                                                                                                       
 #ifdef USE_MARK_SWEEP                                                                                                                                                            
         printf(" BENCHMARK: Mark and Sweep Garbage Collector\n");                                                                                                                    
@@ -102,11 +101,12 @@ void run_benchmark() {
                                                                                                                                                                                      
         // Save results to file for side-by-side comparison                                                                                                                          
 #ifdef USE_MARK_SWEEP                                                                                                                                                            
-        FILE *f = fopen("marksweep_bench.txt", "w");                                                                                                                                 
-        if (f) {                                                                                                                                                                     
-            fprintf(f, "%.4f %d\n", time_spent, peak_memory);                                                                                                                        
-            fclose(f);                                                                                                                                                               
-        }                                                                                                                                                                            
+	FILE *f = fopen("marksweep_bench.txt","w"); 
+	if(f){
+		fprintf(f, "%.4f %d\n", time_spent, peak_memory);
+		fclose(f);
+	}
+
 #else                                                                                                                                                                            
         FILE *f = fopen("refcount_bench.txt", "w");                                                                                                                                  
         if (f) {                                                                                                                                                                     
