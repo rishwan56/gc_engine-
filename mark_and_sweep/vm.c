@@ -1,5 +1,48 @@
 #include "vm.h"
 
+void vm_visualize_heap(vm_t *vm) {                                                                                                                                               
+        if (vm == NULL || vm->objects == NULL) {                                                                                                                                     
+            printf("Heap is empty or VM not initialized.\n");                                                                                                                        
+            return;                                                                                                                                                                  
+        }                                                                                                                                                                            
+                                                                                                                                                                                     
+        printf("\n=== Heap Visualizer (Mark & Sweep) ===\n");                                                                                                                        
+        printf("Objects count: %zu\n", vm->objects->count);                                                                                                                          
+        for (size_t i = 0; i < vm->objects->count; i++) {                                                                                                                            
+            snek_object_t *obj = (snek_object_t *)vm->objects->data[i];                                                                                                              
+            if (obj == NULL) continue;                                                                                                                                               
+                                                                                                                                                                                     
+            printf("[%p] ", (void *)obj);                                                                                                                                            
+            switch (obj->kind) {                                                                                                                                                     
+                case INTEGER:                                                                                                                                                        
+                    printf("INTEGER: %d", obj->data.v_int);                                                                                                                          
+                    break;                                                                                                                                                           
+                case FLOAT:                                                                                                                                                          
+                    printf("FLOAT: %f", obj->data.v_float);                                                                                                                          
+                    break;                                                                                                                                                           
+                case STRING:                                                                                                                                                         
+                    printf("STRING: \"%s\"", obj->data.v_string);                                                                                                                    
+                    break;                                                                                                                                                           
+                case VECTOR3:                                                                                                                                                        
+                    printf("VECTOR3: { x: %p, y: %p, z: %p }",                                                                                                                       
+                           (void *)obj->data.v_vector.x,                                                                                                                             
+                           (void *)obj->data.v_vector.y,                                                                                                                             
+                           (void *)obj->data.v_vector.z);                                                                                                                            
+                    break;                                                                                                                                                           
+                case ARRAY:                                                                                                                                                          
+                    printf("ARRAY (size %zu): [", obj->data.v_array.size);                                                                                                           
+                    for (size_t j = 0; j < obj->data.v_array.size; j++) {                                                                                                            
+                        printf("%p%s", (void *)obj->data.v_array.elements[j],                                                                                                        
+                               j == obj->data.v_array.size - 1 ? "" : ", ");                                                                                                         
+                    }                                                                                                                                                                
+                    printf("]");                                                                                                                                                     
+                    break;                                                                                                                                                           
+            }                                                                                                                                                                        
+            printf(" | Marked: %s\n", obj->is_marked ? "TRUE" : "FALSE");                                                                                                            
+        }                                                                                                                                                                            
+        printf("======================================\n\n");                                                                                                                        
+    } 
+}
 void sweep(vm_t* vm){
 	if(vm == NULL) return ;
 	for(int i = 0; i < (int)vm -> objects -> count; i++){
