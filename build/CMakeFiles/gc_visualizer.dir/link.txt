@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/gc_visualizer.dir/visualizer.c.o CMakeFiles/gc_visualizer.dir/reference_counting/snekobject.c.o CMakeFiles/gc_visualizer.dir/reference_counting/sneknew.c.o CMakeFiles/gc_visualizer.dir/reference_counting/refcount.c.o -o gc_visualizer 
+/usr/bin/cc CMakeFiles/gc_visualizer.dir/visualizer.c.o CMakeFiles/gc_visualizer.dir/mark_and_sweep/snekobject.c.o CMakeFiles/gc_visualizer.dir/stack/stack.c.o CMakeFiles/gc_visualizer.dir/mark_and_sweep/sneknew.c.o CMakeFiles/gc_visualizer.dir/mark_and_sweep/vm.c.o -o gc_visualizer 

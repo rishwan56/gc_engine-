@@ -49,7 +49,8 @@ CMakeFiles/gc_visualizer.dir/visualizer.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.h \
+ /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/snekobject.h \
+ /home/rishwan56/rishwan_program/gc_engine-/stack/stack.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
- /home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.h \
- /home/rishwan56/rishwan_program/gc_engine-/reference_counting/refcount.h
+ /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/sneknew.h \
+ /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/vm.h
