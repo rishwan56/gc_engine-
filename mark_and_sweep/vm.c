@@ -1,4 +1,6 @@
 #include "vm.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 void vm_visualize_heap(vm_t *vm) {                                                                                                                                               
         if (vm == NULL || vm->objects == NULL) {                                                                                                                                     
@@ -25,9 +27,9 @@ void vm_visualize_heap(vm_t *vm) {
                     break;                                                                                                                                                           
                 case VECTOR3:                                                                                                                                                        
                     printf("VECTOR3: { x: %p, y: %p, z: %p }",                                                                                                                       
-                           (void *)obj->data.v_vector.x,                                                                                                                             
-                           (void *)obj->data.v_vector.y,                                                                                                                             
-                           (void *)obj->data.v_vector.z);                                                                                                                            
+                           (void *)obj->data.v_vector3.x,                                                                                                                             
+                           (void *)obj->data.v_vector3.y,                                                                                                                             
+                           (void *)obj->data.v_vector3.z);                                                                                                                            
                     break;                                                                                                                                                           
                 case ARRAY:                                                                                                                                                          
                     printf("ARRAY (size %zu): [", obj->data.v_array.size);                                                                                                           
@@ -42,7 +44,6 @@ void vm_visualize_heap(vm_t *vm) {
         }                                                                                                                                                                            
         printf("======================================\n\n");                                                                                                                        
     } 
-}
 void sweep(vm_t* vm){
 	if(vm == NULL) return ;
 	for(int i = 0; i < (int)vm -> objects -> count; i++){

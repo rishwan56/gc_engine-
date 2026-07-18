@@ -1,28 +1,7 @@
-
 #include "refcount.h" 
 #include <stdlib.h>
 #include <stdio.h>
-#define MAX_TRACKED_OBJECTS 1024                                                                                                                                                 
-static snek_object_t *tracked_objects[MAX_TRACKED_OBJECTS];                                                                                                                      
-static size_t tracked_count = 0;                                                                                                                                                 
-  
-// Call this in sneknew.c when a new object is allocated
-void rc_track_object(snek_object_t *obj) {
-	if (tracked_count < MAX_TRACKED_OBJECTS) {
-            tracked_objects[tracked_count++] = obj;
-        }
-    }
-  
-// Call this in refcount_free when an object is deallocated
-void rc_untrack_object(snek_object_t *obj) {
-	for (size_t i = 0; i < tracked_count; i++) {
-            if (tracked_objects[i] == obj) {
-                tracked_objects[i] = tracked_objects[tracked_count - 1];
-                tracked_count--;
-                break;
-            }
-	}
-}
+snek_object_t *global_head; 
 
 int total_live_allocation; 
 
@@ -62,6 +41,9 @@ void refcount_free(snek_object_t *obj){
 			break; 
 		}
 	}
+	if(obj -> prev) obj -> prev -> next = obj -> next; 
+	else global_head = obj -> next; 
+	if(obj -> next) obj -> next -> prev = obj -> prev; 
 	free(obj); 				
 	total_live_allocation--; 
 }

@@ -1,11 +1,12 @@
 #pragma once 
 #include "stack.h"
 #include "snekobject.h" 
-void vm_visualize_heap(vm_t *vm);
 typedef struct virtualmachine {
 	stack_t* frames;
 	stack_t* objects; 
 }vm_t; 
+
+void vm_visualize_heap(vm_t *vm);
 
 typedef struct stackframes {
 	stack_t* references; 

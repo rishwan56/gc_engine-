@@ -1,0 +1,78 @@
+int:
+kind = 0, data = 5
+
+total alive objects = 1
+
+float:
+kind = 1, data = 3.140000
+
+total alive objects = 2
+
+string:
+kind = 2, data = rishwan
+
+total alive objects = 3
+
+vector3:
+kind = 3
+data:
+x = 5
+y = 3.140000
+z = rishwan
+
+total alive objects = 4
+
+array:
+kind = 4
+data:
+5
+3.140000
+rishwan
+x = 5
+y = 3.140000
+z = rishwan
+
+total alive objects = 5
+
+length:
+int = 1
+float = 1
+string = 7
+vector = 3
+array1 = 4
+
+total alive objects after 2nd  = 10
+
+total alive objects after 3rd  = 18
+
+addition : 
+15
+12.240001
+rishwan qualcomm
+x = 15
+y = 12.240001
+z = rishwan qualcomm
+
+array 3 : 
+5
+3.140000
+rishwan
+x = 5
+y = 3.140000
+z = rishwan
+
+10
+9.100000
+ qualcomm
+x = 10
+y = 9.100000
+z =  qualcomm
+
+total alive object = 17
+
+total alive object = 16
+
+total alive objects = 0
+
+all working fine
+2 methods combined 

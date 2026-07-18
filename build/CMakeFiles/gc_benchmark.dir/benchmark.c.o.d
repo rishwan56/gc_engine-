@@ -54,8 +54,7 @@ CMakeFiles/gc_benchmark.dir/benchmark.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/sneknew.h \
- /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/snekobject.h \
- /home/rishwan56/rishwan_program/gc_engine-/stack/stack.h \
+ /home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.h \
+ /home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
- /home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/vm.h
+ /home/rishwan56/rishwan_program/gc_engine-/reference_counting/refcount.h

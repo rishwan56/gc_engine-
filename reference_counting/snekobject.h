@@ -34,6 +34,8 @@ typedef struct SnekObject{
 	int refcount; 	
 	snek_object_kind_t kind; 
 	snek_object_data_t data;
+	snek_object_t *next; 
+	snek_object_t *prev; 
 }snek_object_t; 
 
 snek_object_t *new_snek_integer(int value); 
