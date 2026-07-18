@@ -86,3 +86,33 @@ void rc_visualize_heap(void) {
         printf("Total Live Objects: %zu\n", count);
         printf("===========================================\n\n");
 }
+void rc_report_leaks(void) {                                                                                                                                                     
+        if (total_live_allocation == 0) {                                                                                                                                            
+            printf("\n[Leak Detector] Clean exit! 0 leaks detected.\n");                                                                                                             
+            return;                                                                                                                                                                  
+        }                                                                                                                                                                            
+                                                                                                                                                                                     
+        printf("\n[Leak Detector] WARNING: %d memory leaks detected!\n", total_live_allocation);                                                                                     
+        printf("--------------------------------------------------\n");                                                                                                              
+        snek_object_t *curr = global_head;                                                                                                                                           
+        while (curr != NULL) {                                                                                                                                                       
+            printf("Leaked Object [%p] | Type: ", (void *)curr);                                                                                                                     
+            switch (curr->kind) {                                                                                                                                                    
+                case INTEGER: printf("INTEGER (%d)", curr->data.v_int); break;                                                                                                       
+                case FLOAT:   printf("FLOAT (%f)", curr->data.v_float); break;                                                                                                       
+                case STRING:  printf("STRING (\"%s\")", curr->data.v_string); break;                                                                                                 
+                case VECTOR3:                                                                                                                                                        
+                    printf("VECTOR3 { x: %p, y: %p, z: %p }",                                                                                                                        
+                           (void *)curr->data.v_vector3.x,                                                                                                                           
+                           (void *)curr->data.v_vector3.y,                                                                                                                           
+                           (void *)curr->data.v_vector3.z);                                                                                                                          
+                    break;                                                                                                                                                           
+                case ARRAY:                                                                                                                                                          
+                    printf("ARRAY (size %zu)", curr->data.v_array.size);                                                                                                             
+                    break;                                                                                                                                                           
+            }                                                                                                                                                                        
+            printf(" | Refcount: %d\n", curr->refcount);                                                                                                                             
+            curr = curr->next;                                                                                                                                                       
+        }                                                                                                                                                                            
+        printf("--------------------------------------------------\n\n");                                                                                                            
+}  

@@ -75,6 +75,22 @@
                                                                                                                                                                                      
         printf("\nHeap layout after releasing all references (should be empty):");                                                                                                   
         rc_visualize_heap();                                                                                                                                                         
+	printf("\n--- Simulating a Circular Reference Leak ---\n");                                                                                                                  
+                                                                                                                                                                                     
+        // Create two arrays that will point to each other                                                                                                                           
+        snek_object_t *cycle_a = new_snek_array(1);                                                                                                                                  
+        snek_object_t *cycle_b = new_snek_array(1);                                                                                                                                  
+                                                                                                                                                                                     
+        // Make them point to each other                                                                                                                                             
+        snek_array_set(cycle_a, 0, cycle_b);                                                                                                                                         
+        snek_array_set(cycle_b, 0, cycle_a);                                                                                                                                         
+                                                                                                                                                                                     
+        // Drop the local variables from main's ownership                                                                                                                            
+        refcount_dec(cycle_a);                                                                                                                                                       
+        refcount_dec(cycle_b);                                                                                                                                                       
+                                                                                                                                                                                     
+        // Run the leak detector (should detect 2 leaked arrays)                                                                                                                     
+        rc_report_leaks(); 
     #endif                                                                                                                                                                           
         return 0;                                                                                                                                                                    
     } 
