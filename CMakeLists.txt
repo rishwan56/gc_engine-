@@ -25,6 +25,17 @@ if(USE_MARK_SWEEP)
 	)
 	target_include_directories(gc_benchmark PRIVATE objects stack mark_and_sweep)
 	target_compile_definitions(gc_benchmark PRIVATE USE_MARK_SWEEP)
+	
+	add_executable(
+		gc_visualizer
+		visualizer.c
+		mark_and_sweep/snekobject.c 
+		stack/stack.c 
+		mark_and_sweep/sneknew.c 
+		mark_and_sweep/vm.c		
+	)
+	target_include_directories(gc_visualizer PRIVATE objects stack mark_and_sweep)
+	target_compile_definitions(gc_visualizer PRIVATE USE_MARK_SWEEP)
 else()
 	add_executable(
 		gc_engine
@@ -44,6 +55,15 @@ else()
 		reference_counting/refcount.c 
 	)	
 	target_include_directories(gc_benchmark PRIVATE objects reference_counting stack)
+	
+	add_executable(
+		gc_visualizer
+		visualizer.c 
+		reference_counting/snekobject.c
+		reference_counting/sneknew.c 
+		reference_counting/refcount.c 
+	)	
+	target_include_directories(gc_visualizer PRIVATE objects reference_counting stack)
 endif()
 	
 

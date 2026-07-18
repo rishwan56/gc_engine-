@@ -142,6 +142,19 @@ gc_benchmark/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/build
 .PHONY : gc_benchmark/fast
 
+#=============================================================================
+# Target rules for targets named gc_visualizer
+
+# Build rule for target.
+gc_visualizer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gc_visualizer
+.PHONY : gc_visualizer
+
+# fast build rule for target.
+gc_visualizer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_visualizer.dir/build.make CMakeFiles/gc_visualizer.dir/build
+.PHONY : gc_visualizer/fast
+
 benchmark.o: benchmark.c.o
 .PHONY : benchmark.o
 
@@ -166,137 +179,143 @@ benchmark.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/benchmark.c.s
 .PHONY : benchmark.c.s
 
-main2.o: main2.c.o
-.PHONY : main2.o
+main.o: main.c.o
+.PHONY : main.o
 
 # target to build an object file
-main2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/main2.c.o
-.PHONY : main2.c.o
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/main.c.o
+.PHONY : main.c.o
 
-main2.i: main2.c.i
-.PHONY : main2.i
+main.i: main.c.i
+.PHONY : main.i
 
 # target to preprocess a source file
-main2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/main2.c.i
-.PHONY : main2.c.i
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/main.c.i
+.PHONY : main.c.i
 
-main2.s: main2.c.s
-.PHONY : main2.s
+main.s: main.c.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-main2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/main2.c.s
-.PHONY : main2.c.s
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/main.c.s
+.PHONY : main.c.s
 
-mark_and_sweep/sneknew.o: mark_and_sweep/sneknew.c.o
-.PHONY : mark_and_sweep/sneknew.o
+reference_counting/refcount.o: reference_counting/refcount.c.o
+.PHONY : reference_counting/refcount.o
 
 # target to build an object file
-mark_and_sweep/sneknew.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/sneknew.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.o
-.PHONY : mark_and_sweep/sneknew.c.o
+reference_counting/refcount.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/refcount.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_visualizer.dir/build.make CMakeFiles/gc_visualizer.dir/reference_counting/refcount.c.o
+.PHONY : reference_counting/refcount.c.o
 
-mark_and_sweep/sneknew.i: mark_and_sweep/sneknew.c.i
-.PHONY : mark_and_sweep/sneknew.i
+reference_counting/refcount.i: reference_counting/refcount.c.i
+.PHONY : reference_counting/refcount.i
 
 # target to preprocess a source file
-mark_and_sweep/sneknew.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/sneknew.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.i
-.PHONY : mark_and_sweep/sneknew.c.i
+reference_counting/refcount.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/refcount.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_visualizer.dir/build.make CMakeFiles/gc_visualizer.dir/reference_counting/refcount.c.i
+.PHONY : reference_counting/refcount.c.i
 
-mark_and_sweep/sneknew.s: mark_and_sweep/sneknew.c.s
-.PHONY : mark_and_sweep/sneknew.s
+reference_counting/refcount.s: reference_counting/refcount.c.s
+.PHONY : reference_counting/refcount.s
 
 # target to generate assembly for a file
-mark_and_sweep/sneknew.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/sneknew.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.s
-.PHONY : mark_and_sweep/sneknew.c.s
+reference_counting/refcount.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/refcount.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_visualizer.dir/build.make CMakeFiles/gc_visualizer.dir/reference_counting/refcount.c.s
+.PHONY : reference_counting/refcount.c.s
 
-mark_and_sweep/snekobject.o: mark_and_sweep/snekobject.c.o
-.PHONY : mark_and_sweep/snekobject.o
+reference_counting/sneknew.o: reference_counting/sneknew.c.o
+.PHONY : reference_counting/sneknew.o
 
 # target to build an object file
-mark_and_sweep/snekobject.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/snekobject.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.o
-.PHONY : mark_and_sweep/snekobject.c.o
+reference_counting/sneknew.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_visualizer.dir/build.make CMakeFiles/gc_visualizer.dir/reference_counting/sneknew.c.o
+.PHONY : reference_counting/sneknew.c.o
 
-mark_and_sweep/snekobject.i: mark_and_sweep/snekobject.c.i
-.PHONY : mark_and_sweep/snekobject.i
+reference_counting/sneknew.i: reference_counting/sneknew.c.i
+.PHONY : reference_counting/sneknew.i
 
 # target to preprocess a source file
-mark_and_sweep/snekobject.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/snekobject.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.i
-.PHONY : mark_and_sweep/snekobject.c.i
+reference_counting/sneknew.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_visualizer.dir/build.make CMakeFiles/gc_visualizer.dir/reference_counting/sneknew.c.i
+.PHONY : reference_counting/sneknew.c.i
 
-mark_and_sweep/snekobject.s: mark_and_sweep/snekobject.c.s
-.PHONY : mark_and_sweep/snekobject.s
+reference_counting/sneknew.s: reference_counting/sneknew.c.s
+.PHONY : reference_counting/sneknew.s
 
 # target to generate assembly for a file
-mark_and_sweep/snekobject.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/snekobject.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.s
-.PHONY : mark_and_sweep/snekobject.c.s
+reference_counting/sneknew.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/sneknew.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_visualizer.dir/build.make CMakeFiles/gc_visualizer.dir/reference_counting/sneknew.c.s
+.PHONY : reference_counting/sneknew.c.s
 
-mark_and_sweep/vm.o: mark_and_sweep/vm.c.o
-.PHONY : mark_and_sweep/vm.o
+reference_counting/snekobject.o: reference_counting/snekobject.c.o
+.PHONY : reference_counting/snekobject.o
 
 # target to build an object file
-mark_and_sweep/vm.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/vm.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.o
-.PHONY : mark_and_sweep/vm.c.o
+reference_counting/snekobject.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_visualizer.dir/build.make CMakeFiles/gc_visualizer.dir/reference_counting/snekobject.c.o
+.PHONY : reference_counting/snekobject.c.o
 
-mark_and_sweep/vm.i: mark_and_sweep/vm.c.i
-.PHONY : mark_and_sweep/vm.i
+reference_counting/snekobject.i: reference_counting/snekobject.c.i
+.PHONY : reference_counting/snekobject.i
 
 # target to preprocess a source file
-mark_and_sweep/vm.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/vm.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.i
-.PHONY : mark_and_sweep/vm.c.i
+reference_counting/snekobject.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_visualizer.dir/build.make CMakeFiles/gc_visualizer.dir/reference_counting/snekobject.c.i
+.PHONY : reference_counting/snekobject.c.i
 
-mark_and_sweep/vm.s: mark_and_sweep/vm.c.s
-.PHONY : mark_and_sweep/vm.s
+reference_counting/snekobject.s: reference_counting/snekobject.c.s
+.PHONY : reference_counting/snekobject.s
 
 # target to generate assembly for a file
-mark_and_sweep/vm.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/mark_and_sweep/vm.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.s
-.PHONY : mark_and_sweep/vm.c.s
+reference_counting/snekobject.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/reference_counting/snekobject.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_visualizer.dir/build.make CMakeFiles/gc_visualizer.dir/reference_counting/snekobject.c.s
+.PHONY : reference_counting/snekobject.c.s
 
-stack/stack.o: stack/stack.c.o
-.PHONY : stack/stack.o
+visualizer.o: visualizer.c.o
+.PHONY : visualizer.o
 
 # target to build an object file
-stack/stack.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/stack/stack.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/stack/stack.c.o
-.PHONY : stack/stack.c.o
+visualizer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_visualizer.dir/build.make CMakeFiles/gc_visualizer.dir/visualizer.c.o
+.PHONY : visualizer.c.o
 
-stack/stack.i: stack/stack.c.i
-.PHONY : stack/stack.i
+visualizer.i: visualizer.c.i
+.PHONY : visualizer.i
 
 # target to preprocess a source file
-stack/stack.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/stack/stack.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/stack/stack.c.i
-.PHONY : stack/stack.c.i
+visualizer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_visualizer.dir/build.make CMakeFiles/gc_visualizer.dir/visualizer.c.i
+.PHONY : visualizer.c.i
 
-stack/stack.s: stack/stack.c.s
-.PHONY : stack/stack.s
+visualizer.s: visualizer.c.s
+.PHONY : visualizer.s
 
 # target to generate assembly for a file
-stack/stack.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_engine.dir/build.make CMakeFiles/gc_engine.dir/stack/stack.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_benchmark.dir/build.make CMakeFiles/gc_benchmark.dir/stack/stack.c.s
-.PHONY : stack/stack.c.s
+visualizer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gc_visualizer.dir/build.make CMakeFiles/gc_visualizer.dir/visualizer.c.s
+.PHONY : visualizer.c.s
 
 # Help Target
 help:
@@ -308,24 +327,25 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... gc_benchmark"
 	@echo "... gc_engine"
+	@echo "... gc_visualizer"
 	@echo "... benchmark.o"
 	@echo "... benchmark.i"
 	@echo "... benchmark.s"
-	@echo "... main2.o"
-	@echo "... main2.i"
-	@echo "... main2.s"
-	@echo "... mark_and_sweep/sneknew.o"
-	@echo "... mark_and_sweep/sneknew.i"
-	@echo "... mark_and_sweep/sneknew.s"
-	@echo "... mark_and_sweep/snekobject.o"
-	@echo "... mark_and_sweep/snekobject.i"
-	@echo "... mark_and_sweep/snekobject.s"
-	@echo "... mark_and_sweep/vm.o"
-	@echo "... mark_and_sweep/vm.i"
-	@echo "... mark_and_sweep/vm.s"
-	@echo "... stack/stack.o"
-	@echo "... stack/stack.i"
-	@echo "... stack/stack.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... reference_counting/refcount.o"
+	@echo "... reference_counting/refcount.i"
+	@echo "... reference_counting/refcount.s"
+	@echo "... reference_counting/sneknew.o"
+	@echo "... reference_counting/sneknew.i"
+	@echo "... reference_counting/sneknew.s"
+	@echo "... reference_counting/snekobject.o"
+	@echo "... reference_counting/snekobject.i"
+	@echo "... reference_counting/snekobject.s"
+	@echo "... visualizer.o"
+	@echo "... visualizer.i"
+	@echo "... visualizer.s"
 .PHONY : help
 
 
