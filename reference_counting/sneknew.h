@@ -1,6 +1,7 @@
 #pragma once 
 #include "snekobject.h"
 extern int total_live_allocation; 
+extern snek_object_t *global_head; 
 
 snek_object_t *new_snek_integer(int value); 
 snek_object_t *new_snek_float(float value);

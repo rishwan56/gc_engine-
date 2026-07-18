@@ -2,8 +2,7 @@
 #include "refcount.h"
 #include <stdlib.h>
 #include <string.h>
-
-extern snek_object_t *global_head = NULL; 
+snek_object_t *global_head = NULL; 
 
 snek_object_t *_new_snek_object(){
 	snek_object_t *obj = calloc(1, sizeof(snek_object_t)); 

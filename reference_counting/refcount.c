@@ -1,7 +1,7 @@
 #include "refcount.h" 
 #include <stdlib.h>
 #include <stdio.h>
-snek_object_t *global_head; 
+
 
 int total_live_allocation; 
 

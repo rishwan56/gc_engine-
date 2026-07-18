@@ -9,9 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/rishwan56/rishwan_program/gc_engine-/benchmark.c" "CMakeFiles/gc_benchmark.dir/benchmark.c.o" "gcc" "CMakeFiles/gc_benchmark.dir/benchmark.c.o.d"
-  "/home/rishwan56/rishwan_program/gc_engine-/reference_counting/refcount.c" "CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.o" "gcc" "CMakeFiles/gc_benchmark.dir/reference_counting/refcount.c.o.d"
-  "/home/rishwan56/rishwan_program/gc_engine-/reference_counting/sneknew.c" "CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.o" "gcc" "CMakeFiles/gc_benchmark.dir/reference_counting/sneknew.c.o.d"
-  "/home/rishwan56/rishwan_program/gc_engine-/reference_counting/snekobject.c" "CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.o" "gcc" "CMakeFiles/gc_benchmark.dir/reference_counting/snekobject.c.o.d"
+  "/home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/sneknew.c" "CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.o" "gcc" "CMakeFiles/gc_benchmark.dir/mark_and_sweep/sneknew.c.o.d"
+  "/home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/snekobject.c" "CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.o" "gcc" "CMakeFiles/gc_benchmark.dir/mark_and_sweep/snekobject.c.o.d"
+  "/home/rishwan56/rishwan_program/gc_engine-/mark_and_sweep/vm.c" "CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.o" "gcc" "CMakeFiles/gc_benchmark.dir/mark_and_sweep/vm.c.o.d"
+  "/home/rishwan56/rishwan_program/gc_engine-/stack/stack.c" "CMakeFiles/gc_benchmark.dir/stack/stack.c.o" "gcc" "CMakeFiles/gc_benchmark.dir/stack/stack.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
